@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html lang="en-US">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>menu1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"  >
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="route.js"></script>
+	</head>
+    <body ng-app="sample" >
+        <br><br>
+        <h1>USER DETAILS</h1><br>
+        <div ng-controller="myController">
+            <table  align="center" width="70%"  height="70%" border="1" cellpadding="0"cellspacing="0">
+                <tr><th>ID</th><th>Name</th><th>Age</th></tr>
+                
+                <tr ng-repeat="user in data">
+                    <td>{{user.id}}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.age }}</td>
+                </tr>
+                
+                
+                </table>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
